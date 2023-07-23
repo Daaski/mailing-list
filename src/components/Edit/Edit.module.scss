@@ -1,0 +1,31 @@
+
+.edit_layout {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #D3D3D3;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+.edit_header {
+  width: 100%;
+  position: relative;
+}
+
+.back_button {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+.edit_header_text {
+  font-size: 26px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 5%;
+  @media (max-width: 1000px) {
+    font-size: 20px;
+  }
+}

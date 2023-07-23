@@ -1,0 +1,103 @@
+@import "src/components/SelectedChannels/SelectedChannel/SelectedChannel.module.scss";
+
+.keyboard_layout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  margin-top: 10px;
+}
+
+.keyboard_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyboard {
+  height: 150px;
+  width: 100%;
+  resize: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #B2BAC2;
+  font: inherit;
+  &:focus {
+    outline: none;
+  }
+}
+
+.keyboard_field_wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.keyboard_ok {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+.keyboard_menu {
+  width: 100%;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.maxlength {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  font-size: 15px;
+  color: #A3ABB2;
+}
+
+.buttons_wrapper {
+  width: calc(100% - 30px);
+  display: flex;
+  justify-content: space-around;
+  row-gap: 10px;
+  flex-flow: row wrap;
+  margin-top: 10px;
+}
+
+.keyboard_menu_settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.key_gear {
+  @extend .gear;
+  width: 25px;
+  height: 25px;
+  color: #64748B;
+  margin-left: 0;
+  transition: .3s all ease-in-out;
+  &:hover {
+    color: #475569;
+  }
+  &:active {
+    color: #334155;
+  }
+}
+
+.plus {
+  @extend .key_gear;
+  transform: rotate(45deg);
+  margin-left: 10px;
+  transition: .3s all ease-in-out;
+}
+
+.handleButtons {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}

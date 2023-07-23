@@ -1,0 +1,14 @@
+@import "src/components/Edit/Keyboard/Keyboard.module.scss";
+.button_editable_wrapper {
+  position: relative;
+}
+
+.xmark {
+  @extend .plus;
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  right: 0;
+  color: red;
+  transform: rotate(0);
+}
